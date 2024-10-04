@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="defensa_b.css">
+</head>
+<body>
+    <div class="container_b">
+        <div class="item1">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Prog Web II</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Comunidad
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Preguntar</a></li>
+                          <li><a class="dropdown-item" href="#">Compartir</a></li>
+                          <li><a class="dropdown-item" href="#">Aprender</a></li>
+                        </ul>
+                      </li>                      
+                    </ul>
+                  </div>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+            </nav>
+        </div>
+        <div class="item2">
+            <img src="desk.jpg" class="img-lefty" alt="desk">
+        </div>
+        <div class="item3">
+            <h2>Front-End vs Back-End</h2>
+            <p>El front end es aquello que ven los usuarios e incluye 
+                elementos visuales, como botones, casillas de 
+                verificación, gráficos y mensajes de texto. 
+                Permite a los usuarios interactuar con la aplicación. 
+                El back-end son los datos y la infraestructura que 
+                permiten que la aplicación funcione.
+            </p>
+        </div>
+        <div class="item4">
+            <img src="color_lines.jpg" class="img-lefty" alt="desk">
+        </div>
+        <div class="item5">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Nombre Lenguaje</th>
+                      <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Python</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Aceptar</button>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">Editar</button>
+                          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal3">Eliminar</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Java</td>
+                      <td>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Aceptar</button>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">Editar</button>
+                          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal3">Eliminar</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>C++</td>
+                      <td>
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Aceptar</button>
+                          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">Editar</button>
+                          <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal3">Eliminar</button>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="modal" tabindex="-1" id="exampleModal1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Aceptar</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Se acepta el lenguaje.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" id="exampleModal2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Editar</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Se edita el lenguaje.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" id="exampleModal3">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Eliminar</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Se elimina el lenguaje.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="item6">
+            <img src="person.jpg" class="img-lefty" alt="desk">
+        </div>
+    </div>    
+</body>
+</html>
